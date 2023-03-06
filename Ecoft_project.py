@@ -226,10 +226,20 @@ if page == pages[1]:
     st.markdown('Que signifie les différentes métriques ?')
     
     st.markdown("""
-                L'inertie : elle mesure ... 
-                Le coéfficient de Silhouète : 
-                Calinski/Harabasz : 
-                Davies/Bouldin : 
+                L'inertie : elle mesure l'éloignement des points de chaque cluster à leur point moyen. L'inertie sert à opérer 
+                le test du coude. L'inertie tend vers 0 à mesure qu'augment le nombre de clusters. Une interie égale à 0 n'a pas donc pas d'intérêt. 
+                On va plutôt chercher le nombre de clusters pour lequel la courbe de l'inertie connait une inflexion forte dans sa pente.
+                
+                Le coéfficient de Silhouète : compris en -1 et 1, plus le score est élevé mieux c'est.
+                La valeur 1 dénote des grappes compactes et la valeur 0 des grappes en chevauchement.
+                
+                Calinski/Harabasz : correspond au rapport entre les dispersion entre grappes et la 
+                dispersion interne à chaque grappe. Plus le score est élevé, mieux c'est.
+                
+                Davies/Bouldin : évaluer la similarité moyenne entre une grappe et la voisine la plus proche. 
+                Les valeurs commencent à 0 et le meilleur regroupement correspond à cete vameur nulle.
+                
+                Source : Machine Learning, Les fondamentaux. Écrit par Matt Harrison
                 """)
 # Changer pour plotly
     fig, ax = plt.subplots(figsize=(6,4))
