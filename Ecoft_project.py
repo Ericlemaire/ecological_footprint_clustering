@@ -226,7 +226,10 @@ if page == pages[1]:
     st.markdown('Que signifie les différentes métriques ?')
     
     st.markdown("""
-                
+                L'inertie : elle mesure ... 
+                Le coéfficient de Silhouète : 
+                Calinski/Harabasz : 
+                Davies/Bouldin : 
                 """)
 # Changer pour plotly
     fig, ax = plt.subplots(figsize=(6,4))
