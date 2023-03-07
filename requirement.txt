@@ -1,0 +1,11 @@
+matplotlib
+plotly
+geopandas==0.12.1
+contextily==1.2.0
+folium==0.13.0
+mapclassify==2.4.3
+xgboost==1.6.2
+shap==0.41.0
+streamlit==1.12.2
+streamlit-shap==1.0.2
+ipython
