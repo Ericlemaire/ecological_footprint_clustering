@@ -58,8 +58,7 @@ st.markdown("""
 # Menu des pages 
 pages = [
     "Exploration des données", 
-    "Clustering",
-    "Interprétation des clusters"
+    "Clustering"
         ]
 page = st.sidebar.radio("Aller vers", pages)
 
@@ -68,7 +67,7 @@ page = st.sidebar.radio("Aller vers", pages)
 #pages introduction
 if page == pages[0]:  
     st.markdown("## Exploration des données")
-    st.image("AAdobeStock_250594518.jpeg",width=600)
+    st.image("AdobeStock_250594518.jpeg",width=600)
 
 # Affichage du dataframe avec les données relatives à l'empreinté cologiques et autres variables
 
