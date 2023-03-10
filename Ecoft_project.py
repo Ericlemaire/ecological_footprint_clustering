@@ -48,9 +48,8 @@ st.markdown("""
 # Menu des pages 
 pages = [
     "Exploration des données", 
-    "Clustering",
-    "Interprétation des clusters"
-        ]
+    "Clustering"
+     ]
 page = st.sidebar.radio("Aller vers", pages)
 
 
